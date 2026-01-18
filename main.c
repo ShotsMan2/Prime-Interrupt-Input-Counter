@@ -3,35 +3,41 @@
 
 int main()
 {
-    int sayi,i,asal,j;
+    int sayi, i, asal, j;
 
-    i=0;
+    i = 0;
 
-    for(;;){
+    for (;;)
+    {
 
         i++;
 
-        printf("%d. sayiyi girin: ",i);
-        scanf("%d",&sayi);
+        printf("%d. sayiyi girin: ", i);
+        scanf("%d", &sayi);
 
-        if(sayi<2){
-            asal=0;
+        if (sayi < 2)
+        {
+            asal = 0;
         }
-        else{
-            asal=1;
+        else
+        {
+            asal = 1;
 
-            for(j=2;j<=sayi/2;j++){
-                if(sayi%j==0){
-                    asal=0;
+            for (j = 2; j <= sayi / 2; j++)
+            {
+                if (sayi % j == 0)
+                {
+                    asal = 0;
                     break;
                 }
             }
         }
-        if(asal==1){
-                break;
-            }
+        if (asal == 1)
+        {
+            break;
+        }
     }
-    printf("%d adet sayi girdiniz.",i);
+    printf("%d adet sayi girdiniz.", i);
 
     return 0;
 }
